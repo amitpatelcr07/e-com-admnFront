@@ -1,0 +1,118 @@
+.table-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table thead {
+  background-color: #f5f6fa;
+}
+
+.admin-table thead th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+  border-bottom: 2px solid #e5e7eb;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.3s;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.admin-table tbody td {
+  padding: 15px;
+  color: #555;
+  font-size: 14px;
+}
+
+.name-cell {
+  font-weight: 600;
+  color: #333;
+}
+
+.description-cell {
+  color: #999;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.image-cell img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.image-cell {
+  text-align: center;
+}
+
+.price-cell {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.rating-cell {
+  font-size: 16px;
+}
+
+.in-stock {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.out-of-stock {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-edit {
+  background-color: #e0e7ff;
+  color: #667eea;
+}
+
+.btn-edit:hover {
+  background-color: #c7d2fe;
+}
+
+.btn-delete {
+  background-color: #fee;
+  color: #c33;
+}
+
+.btn-delete:hover {
+  background-color: #fdd;
+}

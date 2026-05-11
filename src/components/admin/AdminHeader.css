@@ -1,0 +1,45 @@
+.admin-header {
+  background: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-left h1 {
+  color: #333;
+  margin: 0 0 5px 0;
+  font-size: 24px;
+}
+
+.header-left p {
+  color: #999;
+  margin: 0;
+  font-size: 14px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.admin-name {
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+}
