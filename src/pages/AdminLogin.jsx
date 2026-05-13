@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./AdminLogin.css";
-
+const BASE_API_URL = import.meta.env.VITE_APP_API_URL;  
 const AdminLogin = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -27,7 +27,7 @@ const AdminLogin = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        `${BASE_API_URL}/api/auth/login`,
         formData,
       );
 
